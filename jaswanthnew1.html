@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaswanth Movielike</title>
+  <style>
+    /* --- General Styling --- */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0b0b0b;
+      color: #f0f0f0;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    /* --- Navigation Bar --- */
+    nav {
+      background-color: #1b2838;
+      padding: 15px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 1.6em;
+      color: #66c0f4;
+      font-weight: bold;
+    }
+
+    .nav-links a {
+      margin: 0 15px;
+      color: #c7d5e0;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: #66c0f4;
+    }
+
+    /* --- Hero Banner --- */
+    .hero {
+      background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.4)),
+                  url('bgmi.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      color: #ddd;
+    }
+
+    .hero button {
+      background-color: #1f2f37;
+      color: #0b0b0b;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 5px;
+      font-size: 1em;
+      margin-top: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .hero button:hover {
+      background-color: #8ed4ff;
+    }
+
+    /* --- Game Cards --- */
+    .games-section {
+      padding: 50px 30px;
+      background-color: #16202d;
+    }
+
+    .games-section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #66c0f4;
+    }
+
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      justify-items: center;
+    }
+
+    .game-card {
+      background-color: #1b2838;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .game-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(102, 192, 244, 0.5);
+    }
+
+    .game-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .game-info {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .game-info h3 {
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+
+    .price {
+      margin-bottom: 10px;
+    }
+
+    .old-price {
+      text-decoration: line-through;
+      color: #888;
+      margin-right: 10px;
+    }
+
+    .discount {
+      color: #66c0f4;
+      font-weight: bold;
+    }
+
+    .buy-btn {
+      background-color: #66c0f4;
+      border: none;
+      color: #0b0b0b;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .buy-btn:hover {
+      background-color: #8ed4ff;
+    }
+
+    /* --- Footer --- */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1b2838;
+      color: #c7d5e0;
+      font-size: 0.9em;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">Movielike</div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Reviews</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+
+  
+
+  <!-- Games Section -->
+  <section class="games-section">
+    <h2>HollyWood Movies</h2>
+
+    <div class="game-grid">
+
+      <div class="game-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaGr--ZRF8jDTBVlXo5GqQtknjvRISJHNu2Q&s" alt="Free Fire">
+        <div class="game-info">
+          <h3>Avatar</h3>
+          <p> A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.          </p>
+          <button class="buy-btn">Watch Now</button>
+        </div>
+      </div>
+
+      <div class="game-card">
+        <img src="https://4kwallpapers.com/images/wallpapers/superman-character-1920x1200-22993.jpg" alt="Image 1" />
+        <div class="game-info">
+          <h3>Superman</h3>
+          <p> Superman must reconcile his alien Kryptonian heritage with his human upbringing as reporter Clark Kent. As the embodiment of truth, justice and the human way he soon finds himself in a world that views these as old-fashioned</p>
+          <button class="buy-btn">Watch  Now</button>
+        </div>
+      </div>
+
+      <div class="game-card">
+        <img src="https://rukminim2.flixcart.com/image/480/480/l20rma80/poster/u/6/l/medium-formula-1-f1-racing-cars-hd-19-matte-finish-poster-original-imagdgayrtewggax.jpeg?q=90" alt="Black Myth Wukong">
+        <div class="game-info">
+          <h3>F1</h3>
+          <p > A Formula One driver comes out of retirement to mentor and team up with a younger driver.</p>
+          <button class="buy-btn">Watch Now</button>
+        </div>
+      </div>
+      <div class="game-card">
+        <img src="https://www.acmodasi.in/amdb/images/movie/s/7/the-grey-2012-3v01Wv.jpg" alt="minecraft">
+        <div class="game-info">
+          <h3>The Gray Man</h3>
+          <p > When the CIA's most skilled operative, whose true identity is known to none, accidentally uncovers dark agency secrets, a psychopathic former colleague puts a bounty on his head, setting off a global manhunt by international assassins.</p>
+          <button class="buy-btn">Watch Now</button>
+        </div>
+
+        
+
+    </div>
+    <div class="game-grid">
+
+       <div class="game-card">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUSExMVFRUWGBcVGBUXFRgVFRgVFhcWFxgXFRUYHSggGBolHRUXITEiJSkrLi4uGB8zODMtNygtLisBCgoKDg0OGxAQGi0dICUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAJgBTAMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAADAQIEBQYAB//EADwQAAEDAgQDBQUHBAICAwAAAAEAAhEDIQQSMUEFUWEGInGBkRMyocHwFEJSgrHR4QcjYnKS8bLCFjOi/8QAGQEAAwEBAQAAAAAAAAAAAAAAAQIDAAQF/8QAIhEAAwEAAgMBAAIDAAAAAAAAAAECEQMhEjFBUTJhEyJi/9oADAMBAAIRAxEAPwDO0SHaem6MGwmZRqdt9x5p7SSBPjytsvQR5bCtCSk7K6QDbTlN0jCh1akI4BC067muzAmdyNVdcO41Pdqf8h8ws8KwKNSH/aVymUVNG5pQbi6O0Ku4KW5A1pBgefmFahqkyoyFyKGpMiBgULsqKWJcqbRGgOVdlT6jgNSL6DdRq2NYyMzgJsJ+rLdgC5UhSUcQ14ljg4dCnhiAyQMtRGNT2sR200BkhjWozGpWUkZ0NaXHZLo2FfxOuWgNFibzyROHYous7XY8/JV9SXuLjv8AUKw4VhMzwNhc+SZ+gfSXxXFU8NQqYir7lNpcY1PJo6kkAdSvKv8A5vxLEPLqLWNbtTY1jjHKX+8etvALSf1hxlQOw+FBim8Oqv8A83McMoPRpgxvPRY/gprUjUq5G1KVECo5zYDwMwENI1JuYMWDuS5r5HvR2cXCmtZu+xvaY4ovo1mezr0xLhBbLbXym7SJHqFpjSCzHASMRxD7Qwksp0C1zi3KS+o8Nax2xLfZP06bELWuCeabRLkhJ4RX00I0lMIQ3qmkmiG5ibkR6kDUx/KQtTCYByJpajwmkLAwAQkRCmlYGDCkJSuQy5Y2ilyaSmkpC5YOiuQnJxKaSsEGUNwRSmFYx57hceHANcbTvr4FXIM6XWHo1vJXWFxjhFzHJUmtFvjL2pbePrdRaoLrDxN4EDxQXVc4DetzOyM5k3T6TzAdMnZTqBUZjVIYFkZsscM8ggtJB5haHB8ZaYa8QfxbeJ5LJsqIraqznQKmjfCDolhZA8UflLQ4gEAQNABpHLRSeFcVLXkVHEtdckkmD0Sf43g/+RF7jcW2k0udtoNyeQWKxWJe+p7Qkh20EiByHIKdxPGmq6dGjQfNQSFSJxEqvWMr4h73Bz3EkCAeXokr1HOguJdFrrkN75TGTEZWe1wc1xDuY+tFtuDY0VmA2zizgNj/ACsQAtdgqZw2ELiIe/1Bd7voLqNorBIrcZpseWQ50akRE8tbq4wFRlUSwzzG48QsTQoaHUG/11V3wfM2o3JqSBHME6FJUoqm97NVTw6qeOYhomT3WCXHr8/5WixhyMJ3Nh4rxjt32imp9mpnusJzn8dUaN6hronr4Ka/SjXw1lDjOGIkOJ/KSp2B7YYSjOdtVpOhLW38Bmn5Lz3BB4ytadGyeRNt/P4Kp7Q1y0ASZPcF5gAXjkIgeYVKSwWfZM/qR2mbjcU2pRDmsp0/ZtJIl3ec4uHIHNHkgdl8U6g/uCrVNduUUxb+4CALBxbUkOcAbEcrrOMqjQiSbR6RfzW07AY51HGUnGm1jbtLWtl2VzSC5z3EuJ3gEDoubx06/LwR63wfhxo0g113uOeodjUdEx0EBo6NCO6mp7YcA5pkESCNwqHttxn7FhXVwA55IYwHQvdMT0ADj1iEV0Sa1kt1NMNNeHYrtJjKh9o+vVkm0OcxtvwhsAb6DZbDsd2zqVA7D1nZnkdyofe6tcd7XB1+RVaCoaWl5xbEZnGPdFhytul4Zjn+667ee9+qg1jEhWHBqAdH4Rc+KvvRz52WxCYUWoIlBcUEFjHoTinPcgPcsKzqj0Bzkj3ITqiZIUeXJMyEXpA5HABsySULMlzJRkx6YSuLkwlAJ43SF1ZUKhHL66KPhaQIdJFtJ59Aj4aRfTkZRnotXZKp1TNlZYbHA2dbqqgiL7/untqDQkfX6KhJzpowWiLi+iMxqoMHiiw8+h+XNWuBxLXEwYsO713j9kyZKowkwlCUp7GXTkmxGtRGBODUQNWQjYMpHFOe68TfWN4+io1ZyJkMqvQ2lDe5OotkrMdFrwfAmrUa2LSM3LLqfUBXnG8aHuFNvusOvN2lugQeFsFGgaxjO/us5gfQnyCjYelKi+2VXSJNFmgWr7KcPl3tCLNsP9j+w/VUOCw0kNFzYR4rd1AKVIMba0D5n65qNv4i8L6zKf1F7QDDYapVaRmtSpDm9xiQN4Eu8GrwAOLniddbm/iStj/UrtC3FVm06QPs8Pnb7QnuveS0OLRyGSA7e8W1xWDdLnHwH6z8kn9FpXWmw4NiCA8mZDQB55p/QLPcXxJNUkOH9qAAZu8mTlsRqbzFm+Ss+CVg1ry7Rpznwa0FQuz2GDicTVuASWt/FUJkny/XwVK7SQsf6tsseB8MDAalS9R1zP3Z6fi5+nNWlGplOYaCLgwSZEDroobnl1zvsgV8dBaIk/dbtbc9Eekgd09PUOxfaYAGk+4uWiwdMTDZIEnxVN2k7RUse1tGthnNNOp7SnT9octU5S0MLgBD4cYbubSDAOSwQOdpJkjvH9StjgMLTr0y2oLu3Bgjq06g9VOoTGmvEy5w9DECnSL8lSp32NblLKdMTa0QXDQXiDO0m4Zwaia7GUnOJpu9o90ZXMDZ7jpFwXAX5KqxfZvEUseKTw6p7QvqNeIZ7Rty4gxla4TcbW0BC9LwGBbSot/ttY97Q55EFxcZJzO1dBJ+K54h6dPJyThXY1WnZykRTJOjjI8rSoPsDUeGDc3PIblaItDQANAIA6BdTZxYDeVGe5FqqK9FCsa96A9ye5BeERQTygOKO5qG4JhWgWZcHpXtQnBEUJmSByGwImVBhFzJCVxTSUg6PKmBSW7KGxyk5xAG95dJvpAjpf1WTLNEgk85iwvPp0Ta7CBJEbRoZ8EEPKbUmJgxzi3qi6Bgja0fXyUyhit9+Y1/lVkojJ8tNfl5rJgaNdgceHWdHjt5qbhaQd3nDXTmBtHJY2jVcND6q44fxYiM2nLUfwrKiF8b+Gka4zlNwBMnUdDzStN0LBVQ5sh0kmT4+CI5tuSc58ejarlDcQbhOxVa1jd1h+6jnFPFMtZTZF4eWB1SOcnw2FkdGU6Eyc/VGpYcD15/CUmDfIAcL7cpVgykSlpjSvjDipmYxgEBoPm5xuf0VjhsKREyNDflzUSjhuaucIJu65/ZRplpkvuzWEE5zo2w8f4+ay/9Ue1TqQFCg/LWqbiMzKQmXCbBziCB5kaKzx/GG4Wi+u8kMY0ktBu4mwaJ3cSB5rw3G8UqVaj8VWvUqOkNBsNgGj8IEADooP2dMLoiY2lkApgd4wNZPIBCwrYkCdbqbg6dQ5qrWF7wRJEHLOhG/oETEMIcXuptpE3N3CTzDJt5LZ9H34Nw1QllRptmytJ3h0zHk0qzdiGwGiA1ogAaCEPhzCA2q4BzXhwLXAE5ZiY02kQnvwzdW2HwTrcEead9psSdJlQ8G7M413AljSA4C5aw6Ojko2MdOZoMNGp25BWHCWForEWe1jw0EAyWiXsdzloPok3WPiSLd9X2ebrlYzkQe8XDmIA/5BNb2kNMxTOd27tb/hYP1J8lSccx+Z2VpOVgFNvkACfMj0ASYY5W5czo3EmJPTRB330MuPrs1XZTjmLqcQpZqji12fMw+6GZHGY2IIEHXbdegcQqW+uayX9NeGhramKIu7+2z/UEF58zA/KVqKVM1XhuxJJ6N5+n6rQutJ8nvESeCYSGmodXaf6j9z+gUuqpj2gWFgLKJUCYmyG5CcFJe1CITaDCM5qG5qkuCY5qJsIjmoDgpT0B4WA0AcEPKiuTWlNojQjWwuKeQhuKHsw1yGU5yatgDyFpRWvQHROkee/ONvBGwjzmBEjKQcwuQZtAJAmdlPcOvxJtag8CXkAgDuOzZ4I7toiI6oLnm2sba/BNx1RzqjnPcS4mSTE/C3ohh4m5+E328kULgdkaTHUrmAfQTsOGusXZSfdJ92eTuXin4nDPpuDXNykgEAkGx3kWKYUUDlOyl0gPrRR6TgTJnWXaTc/dHPVPdUBJLbCbNmSBeBO8KksRlhh6pbYH0Vh9tLmkbn1H7qnsB94GNCN9/AIpJBvrzmfiLKiZOpLajSDiANAI8hv4q0bSytmJ2A6lU2CrkH4K8o0nVnsaJABBPORdFvCaiqeEnhuDgZiNBA+ZS4bC1qpNSmcrQYaCLOjcqx4gX5G0GNJzWEC4G9+qu+GcOIDWxDQIUL5EkdHHwtspMM8zlqNyu57HwKtqFOE7itBpqtptvl7zz+gTy3RS8/Jair4/E87/AKncRD30cMHjK2alQAyQ7RvtI90QTHj0CxTctSpIAytsOUqViMbVNX2VFjoqP92O9Ue5xJDjqdSOWpPML2r4Z9krDDU6mcNY11QgZcr3SS0a2y5T+ZInpXEukR3UA0w2Xv2a3mdAT6JvFsFUY/Ke850BvK+w87HwVnwtv2ZwJBzEXnWCBOVw++JI8QBaRI6JL30w4y6lmcTzLSQDPUkFPm9Cb9CuOXLTn3RlFthpN9UKo8hpP1KXEOJcSoeJqE93qfii3gEtEw2GNSGfiOY/+ot6+anfaxTpAjMKhaADZwzMfUpZjOhFORvMtOxmywGEDGte0ta8C4LgC6YgAG0gW8wqLiuIzOygghuYAgCDLi4mRrclLS8Vo8vyeEHDMlw5BT2Uy4hrQXFxAAtJJMAdLwoeFsSf5Wq7D4QVMU0kS2mDU2AzCA2edyD5KE9ln12eiYPCihh6dEH3GhpI3d953mS4q64JhMrDUOr9OjdvXX0VVhqXtqoZtqTyG/7ea0z6rQckiYs2bx4K766ORd9gHqt4tixSZmiTMATE87+Ci8Y4o4udTpkREE7zvB+Cp8UXuDQ5xMAxN/RYeY1lhhuNU3uykFh2kgjwlWDmrJfZ1reD4VwpNzEmbidm7BKr7LXwqVqBuahPCsalFR30kVRNwVzwor1Y1aaiVGp1ROowhuTGi6M8IRTE2hzkMhPCaURBhCaWooCaQtpjxnEPaXdwEDWHQSDuJGo5G3gmA/8ASMyi97XPawlrPeIB7oO5lNDIAmYNxa3iOakvR1N9i0sv3jHgJ/hEcwZcweM0wWQ4EdZjKR5yuNUOdL7jk0NaSdhpA8YPmgQfqVjPPSCtM2UinWcBAJA6fpPJRWtO+6M0kaTOo5iLyiKSQ5pyWDbEOcSTJzG5AuBEWjmi0n3E87+qr21LypNJ3NOmK0XGJxAqPc8DLJkAkuN9ZJ1TmuETMnSLzprMQoVEEzAm0m+gRxU6RH1dVTJtEuiYiPVans7xZtOcwMxYg6HqPms1TxFEMc3K8uIGV5cGgGb9wAyNtettE6hiY6rUlc4wTVQ9R6V2XrtfVc+oTmPuz8lqazw1pdyC8jwHE3sMgwtRhu0pcMtQeY/bZcPPw3ur0dnByx44/ZccLwzoc93vPMk/oofaHGGjSJb757rLSA4gnMegAJ6wBum1eMNHunutF/kqrC492KxBeR/Zoy0SNaxLSY6sDRM7viAWFNKoNXOYTOAcLZSBqFjW1akOf/iAIayTfujU7kuO68qZX+0YqpWNw+o6p+XN3B6ZR4L0btzxkUMK/LZ9WabBuJHed5NnzLeawfCsKGtFrkyDzaJiOVyfQKn3CK9NlhiKczvqZ5TrfwVBwl4L4m3sjl/1D4HwhSu1XEHtii0gZmy6BeDoJ63UBuHcAzLIcGi4+uqzrsMz0FxFfkpnDeHOPfe0gGzSRYkcjzVcKZBzOO4Gk3M3ty/ZXp4/kwzqBE6Gm4ayCD3vDnfkpvkxlZ49lg+L4zIMjbOIIncNMA+v1ss+5tlKqYkVHEmxcd/kfgmV7bIXW9h448egeHW/7CMAp1an3i5rL7ACdepd8AsU7CupimXCPaMFVv8AqXuaJ8ck+BC9D/p3hC+kAR3S9ziegDWn/wAY80vH/IPL/E1NGp9nw5qT/cqWadw3nHx8wqOriHOcXkkuN56+Sk8dx2epb3W91vgNSFXB0q5BIk0ipApyUCiptFJTLxJ2HwwzAuEiRI5ha2gA4SNFRYWnK0/DqQDAOd1z+XZXk9ESph1Er0VoKlFV+JpLeTEWMoa1NQKzFdV2KurNVpYlIq6jEEhTKrVFcrJnNSGQmuCeXJjkwjQiaSlJQ3ORFPLuAYDFPJFJxptcHHMTDDFoNje/6qDiGvDy1xLyDl1JFrQ3otFSY5mDfUD/AGb4kUhAgWE5XX69Lqg4aysS6rTElly6YgncE/e1SYVTFrUO8RBMAZhEQ7lbkhExpNtiJhTcXjy4BzQWODcr4PvdYib9VXB0z0WG9BfaH6+rJ9djgA8kAOGURIkNAEaCfKb6qMHlcDPh8OUoB9hKQmwnMSABEzPWdfJFa7LYgyCQQREEc95UcImYmSXSdZMkk6a8/Hksn2M0sJlOraLel0dtZoAuZk+EWiOuvwVc1/NWz+IZGU20W5CWn2jw8OL3HnlPdAGg1ElP5E3P6Fo1GZYIJfOubu5Y0yxMzvPkpjOgM3sLm3hdUba2gjz38PBS8NjnMOZrnNN4I1EiDfwKZUI50sqOK81Y4evpy9YWao1+StsLU5I+QuFvjK78obTEucQ2SJDf8nf4gSesBv3ld8MaKbWU2yGs5mS4m5c7mSSSTzKoqDjzRuI440qNRwscvdtu6wN+pU2vo6fWGd7R8RfisTLe81p9nTA01u4f7H4QrPCAFoGzIZPQfUql7Pl2ZztmNn8zrN/9j+VSMbWDaRAdBfN9oiCR8Qpp52y7lPJkocQ81qrn7OcAP9ZgfBWrDmfEw2Q2dgJiVAwlPlzt6a+Vypb6jTTAadbOEbNMi/U6+CyM+iPisTnIgWsABMnrHMn9lqOMdlm4ThwrVgTiaz6bADpRaSahAH4yKcE7SQN5ruw/Cn18bSLR3KT2Vah2aGuzAeJLYA8eRWh/qzxDPiaWHBJFFmZwm2erB05hrWn8/ihn029pGJo0ZVv2c4B9qrtpEuDAC95bqGDkSCASSB59FVhwG/l+5XqnYDhYo4b2rh368O6imPcHnJd+YckvjrGq/FaZfjzaJxxpVGFlGjSYxvvSQAHCDe3eIEWEFafgmKaygadGANM2ut5EzMyfMpnbfDNdQzQ3PZjT94ZzliY0Ac53lKZg8MKdJrQZsD5wB6WCaYfk2JXInCQyu6LbcvDn6n1QmVEtchRmuunaNLLPDuU6kd1XYdTg6SG+qlR0Qy54e7RaLB1BCy2HqK0w+JgLmpMpS8kaA1FExJUJuJLjHNFrVEVreskp8St4jiWsid+SgNrNeJb/ANdCo3FsRmJPkPBVGGnPOYtA7zjpYfUKsj1C8dLas1Q6gUs1Wu90g+BUeouhHHRGKQpzkyU5JjHoJKK8oDnIk2eMVHkmST46rQ9kKNF9U06xBBHd7zQPAnUHwIWfcEfCUGkOc6pkyCRa7idAL2U17Oh9omcfwopVXMDco1FySWnSZ0Ve0wRaRIsLTzEhOqYhzr1HFxAgEkk680ym8bzH+MT8VjJD61WTEZQCcrZnKHGYnU67otPGvymmMuV0SMjcxgyO9E69VEiUoYUBiV7Qxl2mY66SlZlyuOaHCIaQe8DazuY5GLb2hDD7yRbkNPASURzs14Hjp8rlYb2xofBB18UX2jnQC7TQkgDW990Jg6+oBRczSGtIaOboMwTqRN4RF39HupOhzgWkNMGHCdRBDCQ4i+oCRrkJ+sNmNs0AxtMbrqbT6orRXhY1MW+o8ve4lxiTAAgCAIAjZWGBJJAm56ho8yTCq8PTVjh6d0yEeFzhXDRQu1WKsynOvePgLNH6+iPQBGypMb/exGWbSGTyAsT/AORRr0CPZbcKo5KAnWp3z4EQ0el/zFU/GcSXllKBlo5mAjUlzpcSeU2HnzV9jq+Vrnge6LDkdGj1I8gs/g8E+o6GtLydAL+bjsPFLS+Dy/pL4RDYc8OLYJOWLARYk6SY9QmYmq10kCAdvktDxThAoYJ0e+SwvM6nMLDoCVnuG0RUq06bvdc4A+H86eaDQyro9R7F8NbSo0yBl/ttqVHaEuIzOkmLCct9mry7HY12Iq1MRUEOqOzkbCdGjmAAB5L0HtpxcYfCCgw9/ES2eVMR7Qz1Dg38x5LziIACFA4/0tezPB/tOIbTP/1jv1CPwD7s83G3qdl6xUxGw02iw8Fm+yfDfs9CSO++HP6fhb5A/EqzrPcenwsjCSJ8lNshdpMRmbTZF31Wtb6OzH/jI8SEXG1gLBVeJpvdimOIPs6bHEG0F7jERzgApuJrTqmQPiEr4gAEk2Vdw7Gl7yNjp/Kr+KYsud7Nvn48k+sMrWubqz9P+1Om/heEl7NjRMXUnDHfcqpwWJkBynU6qDLQy2pOUoVVWYarzUqm7dSclfIm08UWkH18EmP4jIhuhFyobiomIespNqYDFVZUPEPhuUauu7oBoPmuxFRQarkyQGxoxTmGWkjpt5hGdxp8aCZ8iOUbKC8oD1RIjeMu8JxRrx3iGmY5AzOnopZKz3C8NmfJ0bfz2V0+oAJJgczYJ0c1LDqjkAuTnuQSUxM8ja8b+qe66CClDlMuFET3reG/QckJw1jRS+I1KRd/anLlEyL5t1D9Vgoe0ydzz/jnZENS5J9Bb5JjmwdCNNdZ+ESlLRsfH69EA6FN9APRKGAT3sviQZTA/cm/U3P7ojah/karB0UhxaNIHJrQZPMgS7zJTcugkHnyHhunM/FOhtB73OY1THDN46opAbHAxuPD/tEZUJt/H15IbBH18koqhptPPxWAWtHKdbH0HjAFvBWFDLpM9Nj4FVdF4ytOlzmOjZJsJgxbmjMf15731hOmhXLLoYhoDnfhBPMWVJwZkvc87N//AE636ZlMqPb7F1R12uJYCCILhctMaGOcJuDaKTA6oModFQf5N2AO56dUd2geOTv6T+IFntm0SMxkHLzcbNB8j8QthhMMyk3K0AczF3HmVj+A2rnE1G3M5Wk3Bd97S1rAdVqhxamRfuxzuPVZT26Fu/8AVQil7c4hwosA+9UEjwa4jy/hVXZDBVXYj2lstOZMSC5zSA1p53np5qNx7iZxFcFghrTlZbaReOZPyVlxDEOwtBuGY4iq8l9Vw+7m1AOxNvIdQhqb0bGlhV9oeJjEVy7RrBkZvIaTLvMk+UKy7F8LFeuHPsxhEk7u1AH6+nNUdDh73ubTpjM52kaRzJ2AXonD8IyhSbSAmLk7l27vrogpbZrtSsNXWa1gkkASB5mwCg4xo2We4pjKjmBmYlsjXURpeJRmcYFRzgPda0XIuXfsl8XIypUsG8QqRN7fVlnOJ44tEDU6fupnEMcJPJZivUL3TzRb6NMk3hdGZcfAfNExJzOFMeaYK2RsDy/dH4TS1edShnwf/oucO6AprK5IAmyr2uUiiJKzQZotMK9WdKqqek48lLa9DDNk99ayrMVUSvrKDiKyDQZeAqj1He5FpkXJ0CjvKKQzsE5yA90olQp+Apy7MdB+qdIk2WeFp5Ghu+p8VWcdxWlMeJ+QU6tXygk7LOV6hcSTqUSf9j6GNfT0NuRuP4U1nGmxdpB6XCqnILgsBpMxyeZEiCOYNly5TRVjAdbfFOb9BcuWMK545QkJ6rlyxkEbPki1INxadtvLkuXLaNgwPI+vmERtYwG6De+pmQSOlvRcuWFENTmiNZJk6bCJHluuXImQapS0yx+tyGyZIG+3RKxxbbWLfR1XLlgsSicrpblP+L2tePRwj9D1VzT4g6s5vtMndsxkEMYLC0C2gv4LlyMvsWkTGVj7vxFz/I6qVVcPZvAuXNcOlxyXLlR9iys7Krg2GPtWu0yODp6tuPiE/G189arUe4vLnnvTckzHpEei5ck+IO62aPsngxTa6o+z3WAI91mvkSYt/iFbYly5crJYcl9vSoxzvLqq018kwuXJG9LxOER4Lj0RaGAPvELlyjTw64lNAH0iXR9QrJndAC5cjP6JyLHhMoFTaAOy5csAsBTshucQuXIBAVaqiVXLlyJgUpCVy5MkKwD0rMQW2GnzXLkSZFrVXHUkjkozmrlyxmMIR8PgC4TMLlywp//Z" alt="ghost">
+        <div class="game-info">
+          <h3>Tenet</h3>
+          <p > Armed with only the word "Tenet," and fighting for the survival of the entire world, CIA operative, The Protagonist, journeys through a twilight world of international espionage on a global mission that unfolds beyond real time.</p>
+          <button class="buy-btn">Watch Now</button>
+        </div>
+      </div>
+    </div>
+    
+           
+    </div>
+   
+
+  </section>
+  <section class="games-section">
+    <h3>TollyWood Movies</h3>
+    
+    <div class="game-grid">
+
+       <div class="game-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7gupDIjEPfvmjENLhHqL0bBOwZCnmR7e_uA&s" alt="ghost">
+        <div class="game-info">
+          <h3>Bahubali </h3>
+          <p > A child from the Mahishmati kingdom is raised by tribal people and one day learns about his royal heritage, his father's bravery in battle and a mission to overthrow the incumbent ruler.</p>
+          <button class="buy-btn">Watch  Now</button>
+        </div>
+      </div>
+
+       <div class="game-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd-ElVBp2pzekwInZ2tQ8b7YEfdm6wT6iF1A&s" alt="ghost">
+        <div class="game-info">
+          <h3>Jersey</h3>
+          <p > A failed cricketer decides to revive his cricketing career in his late 30's despite everyone being skeptical of his ability to do so.</p>
+          <button class="buy-btn">Watch Now</button>
+        </div>
+      </div>
+
+       <div class="game-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8OvcXU8pVrGoe9q2tbIQe6ecjyrno3rCXsg&s" alt="ghost">
+        <div class="game-info">
+          <h3> Kannappa</h3>
+          <p > An atheist hunter Kannappa becomes a devotee of Lord Shiva and plucked out his eyes in an act of devotion.</p>
+          <button class="buy-btn">Watch Now</button>
+        </div>
+      </div>
+
+       <div class="game-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMUzpcWpMIaV0kNeriOfsct6bafTdHJNE_ng&s "alt="ghost">
+        <div class="game-info">
+          <h3>Bruce Lee</h3>
+          <p > A stuntman is mistaken for a police officer by an idealistic woman and begins fighting crime on behalf of the police.</p>
+          <button class="buy-btn">Watch Now</button>
+        </div>
+      </div>
+
+       <div class="game-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV1c5nGKDHkvHmIQGKtcFXYl4Vmk_hM3QW-Q&s" alt="ghost">
+        <div class="game-info">
+          <h3>Rebel</h3>
+          <p > Rishi is seeking revenge for his late parents who were murdered.</p>
+          <button class="buy-btn">Watch  Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer>© 2025 Movielike | Made with ❤ by Jaswanth </footer>
+
+</body>
+</html>
